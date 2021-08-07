@@ -29,7 +29,7 @@ export default function News() {
               <div className="col-lg-6 col-md-6 col-sm-12 mt-3">
                 {newsList.slice(0, 1).map((news) => {
                   return (
-                    <div class="card" style={{borderRadius:"20px"}}>
+                    <div class="card" style={{backgroundColor:"#f5f5f5",borderRadius:"20px"}}>
                       <Link
                         to={{
                           pathname: "/news/" + news.id,

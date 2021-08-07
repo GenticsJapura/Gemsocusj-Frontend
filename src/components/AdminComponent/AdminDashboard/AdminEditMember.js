@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import AdminSideNav from "./AdminSideNav";
+import {NotificationContainer, NotificationManager} from 'react-notifications';
+import 'react-notifications/lib/notifications.css';
 
 import "../admin.css";
 
@@ -111,12 +113,11 @@ export default function AdminEditMember(props) {
           config
         )
         .then(() => {
-          alert("Member Updated");
+          NotificationManager.success("","Member Updated");
           window.location = "/admin";
         })
         .catch((err) => {
-          alert("Error..Try Again");
-          window.location = "/admin";
+          NotificationManager.error("","Something went wrong");
         });
     }
   }
@@ -209,6 +210,7 @@ export default function AdminEditMember(props) {
           </form>
         </div>
       </div>
+      <NotificationContainer/>
     </div>
   );
 }

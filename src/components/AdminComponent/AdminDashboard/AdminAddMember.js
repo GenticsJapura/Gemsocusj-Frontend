@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {NotificationContainer, NotificationManager} from 'react-notifications';
 import axios from "axios";
 import AdminSideNav from "./AdminSideNav";
 
@@ -54,11 +55,13 @@ export default function AdminAddMember() {
         config
       )
       .then(() => {
+        NotificationManager.success('Member account created successfully');
         setprocessAlert("alert alert-success");
         setprocessMessage("Member account created successfully");
         window.location = "/admin";
       })
       .catch((err) => {
+        NotificationManager.error("Something Went wrong. Please try again");
         setprocessAlert("alert alert-danger");
         setprocessMessage("Something Went wrong. Please try again");
       });
@@ -149,6 +152,7 @@ export default function AdminAddMember() {
           </form>
         </div>
       </div>
+      <NotificationContainer/>
     </div>
   );
 }
