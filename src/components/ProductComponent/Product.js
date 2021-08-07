@@ -131,8 +131,11 @@ export default function Product() {
                               class="card-body"
                               style={{ background: "#f2f2f2" }}
                             >
-                              <h5 class="card-title">{article.title}</h5>
+                              <h6 class="card-title">{article.title}</h6>
                               <div className="row">
+                                <div className="col-lg-12 col-md-12 col-sm-12">
+                                  <p style={{fontSize:"small"}}>{article.description}</p>
+                                </div>
                                 <div
                                   className="col-lg-6 col-md-6 col-sm"
                                   style={{
