@@ -1,0 +1,37 @@
+.societyinforow {
+  background-color: rgb(2, 111, 173);
+  background-image: url("./img/cover3.png");
+  background-size: cover;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  overflow-x: hidden;
+}
+
+.homepagefontawesomeicons {
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+}
+
+.homepagefontawesometext {
+  font-size: large;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}
+
+.countDownText {
+  font-size: xx-large;
+}
+
+.societyinfoDiv {
+  padding: 2%;
+}
+
+.societyInfoText {
+  font-size: large;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+}

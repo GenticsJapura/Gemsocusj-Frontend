@@ -1,0 +1,57 @@
+.ProductImage {
+  height: 300px;
+}
+
+.ArticleBackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.header-wraperArticle {
+  height: 50vh;
+}
+
+.main-infoArticleHeader {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed" sans-serif;
+  background-image: url("./img/banner.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.richText p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#SingleArticleCoverImage {
+  width: 700px;
+}
+.btn {
+  outline: none;
+  border: none;
+}
+.PriceTag {
+  background-color: rgb(5, 116, 150);
+  color: aliceblue;
+  padding: 1px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  #SingleArticleCoverImage {
+    width: 300px;
+  }
+}

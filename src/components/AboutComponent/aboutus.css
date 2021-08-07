@@ -1,0 +1,187 @@
+.AboutUsComponent {
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.LecComponentRow {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.AboutUsRowOne {
+  padding: 5%;
+
+  /* background-image: radial-gradient(
+    circle,
+    #00327e,
+    #004591,
+    #0058a4,
+    #006bb7,
+    #067fc9
+  ); */
+  background-color: rgba(212, 212, 212, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 16px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 16px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 16px -2px rgba(0, 0, 0, 0.75);
+  margin: 3px;
+  transition-timing-function: ease-in-out;
+  transition: 1s;
+}
+
+.AboutUsRowOne img {
+  width: 300px;
+}
+
+.memberrole {
+  /* background-image: radial-gradient(
+    circle,
+    #00327e,
+    #004591,
+    #0058a4,
+    #006bb7,
+    #067fc9
+  ); */
+  background-color: #0058a4;
+  padding: 5px 5px;
+  border-radius: 40px;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.paratext {
+  background-color: rgb(126, 126, 126);
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.membersCard {
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 13px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 13px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 13px -7px rgba(0, 0, 0, 0.75);
+
+  transition-timing-function: ease-in-out;
+  transition: 1s;
+}
+
+.LecurersImages {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+}
+
+.LecturerInfoColOne {
+  text-align: left;
+  margin-top: 7%;
+}
+
+.LecturerInfoColTwo {
+  text-align: right;
+  margin-top: 7%;
+}
+
+.LecComponent {
+  /*log*/
+}
+
+.MemberImage {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  -webkit-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+
+  transition-timing-function: ease-in-out;
+  transition: 1s;
+}
+
+.MemberImage:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (min-width: 400px) {
+  .AboutUsRowOne:hover {
+    transform: scale(1.05);
+  }
+  .membersCard:hover {
+    transform: scale(1.05);
+  }
+}
+
+.LecComponentDesktop {
+  display: block;
+}
+
+.LecComponentMobile {
+  display: none;
+}
+
+.CommetteMemberDiv {
+  /* background-image: url("../images/interface1.png");
+  background-size: cover; */
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 800px) {
+  .LecComponentDesktop {
+    display: none;
+  }
+
+  .LecComponentMobile {
+    display: block;
+  }
+
+  .AboutUsRowOne img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .LecurersImages {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .LecturerInfoColOne {
+    text-align: center;
+    margin-top: 6%;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 400px) {
+  .LecComponentDesktop {
+    display: none;
+  }
+
+  .LecComponentMobile {
+    display: block;
+  }
+
+  .AboutUsRowOne img {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .LecurersImages {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .LecturerInfoColOne {
+    text-align: center;
+    margin-top: 6%;
+  }
+}

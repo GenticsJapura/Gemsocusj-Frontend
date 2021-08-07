@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+}
+
+body {
+  font-family: "Roboto Condesed" sans-serif;
+  overflow-x: hidden;
+}
+
+/***********************NAVBAR*************************/
+
+nav {
+  overflow: hidden;
+}
+
+.logo {
+  width: 16.25rem;
+}
+
+/***********************NAV LINKS**********************/
+nav {
+  background-color: rgba(5, 106, 153, 0.8);
+  border-bottom: 4px solid white;
+  margin: 0% 2%;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+nav a.nav-link {
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
+}
+
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  font-size: 0.9rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important ;
+  border-top: 3px solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 9rem;
+  padding: 0 !important;
+  height: 10rem !important;
+}
+.navbar-brand img {
+  width: 100%;
+}
+
+.navbar-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 3px solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 3px solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 3px solid var(--primary-orange);
+}
+
+/************************HEADER************************/
+.header-wraper {
+  height: 100vh;
+}
+
+.bg-img {
+  position: relative;
+  background-image: url(./gen3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.navcontainer {
+  position: absolute;
+  z-index: 1;
+  /* margin: 20px; */
+  width: 100%;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed" sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+/************Typed text**************/
+.typed-text {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--primary-orange);
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(207, 207, 211),
+    0 0 5px rgb(108, 108, 109);
+}
+
+/*contacy us button*/
+.btn-main-contact {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+
+.btn-main-contact:hover {
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+/*************particles******************/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+/*************BreakLine******************/
+.HrBreaker {
+  width: 55%;
+  border: none;
+  height: 5px;
+  border-radius: 20px;
+  /* Set the hr color */
+  color: radial-gradient(
+    circle,
+    #00327e,
+    #004591,
+    #0058a4,
+    #006bb7,
+    #067fc9
+  ); /* old IE */
+  background-image: radial-gradient(
+    circle,
+    #00327e,
+    #004591,
+    #0058a4,
+    #006bb7,
+    #067fc9
+  ); /* Modern Browsers */
+}
+
+/**********************footer******************/
+.footer {
+  /* background-image: linear-gradient(
+    to right bottom,
+    #0044a6,
+    #0044ab,
+    #0044b0,
+    #0044b5,
+    #0044ba,
+    #004dc2,
+    #0057cb,
+    #0060d3,
+    #1774df,
+    #2f88e9,
+    #479cf3,
+    #5faffb
+  ); */
+
+  background-image: url("./img/footer.png");
+  background-size: cover;
+
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+  padding-top: 8%;
+  color: white;
+}
+
+.footerLink {
+  color: white;
+}
+
+.footerLink:hover {
+  color: rgb(240, 176, 0);
+}
+
+.socialIcon {
+  color: white;
+}
+
+.socialIcon:hover {
+  color: rgb(240, 176, 0);
+}
+
+.headerText {
+  font-size: 150px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(207, 207, 211),
+    0 0 5px rgb(108, 108, 109);
+}
+
+.CaroselImage {
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .headerText {
+    font-size: 70px;
+    font-weight: bolder;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    background-image: url("./img/footer.png");
+    background-size: cover;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+    padding-top: 20%;
+  }
+
+  .headerText {
+    font-size: 50px;
+    font-weight: bolder;
+  }
+}
+
+/*Scroll Bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ReactLoadingComponent {
+  margin: auto;
+  width: 200px;
+  height: 600px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}

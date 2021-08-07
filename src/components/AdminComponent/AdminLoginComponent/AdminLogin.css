@@ -1,0 +1,49 @@
+.MainLoginComponent {
+  background-image: url("../../../img/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.SubLoginComponent {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  background-color: rgba(0, 107, 139, 0.5);
+  padding: 4%;
+  border-radius: 20px;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+.HrBreakerLogin {
+  width: 90%;
+  border: none;
+  height: 5px;
+  border-radius: 20px;
+  /* Set the hr color */
+  color: radial-gradient(
+    circle,
+    #00327e,
+    #004591,
+    #0058a4,
+    #006bb7,
+    #067fc9
+  ); /* old IE */
+  background-image: radial-gradient(
+    circle,
+    #00327e,
+    #004591,
+    #0058a4,
+    #006bb7,
+    #067fc9
+  ); /* Modern Browsers */
+}
